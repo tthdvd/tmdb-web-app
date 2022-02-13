@@ -1,0 +1,14 @@
+{
+    "name": "tthdvd/tmdb",
+    "description": "Minimal laravel package for communication to Top Movies Database's API v3",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "David Toth",
+            "email": "tthdvd@icloud.com"
+        }
+    ],
+    "require": {}
+}
