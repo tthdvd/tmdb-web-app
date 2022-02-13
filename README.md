@@ -2,16 +2,16 @@
 
 ## About the project
 
-This is simple web application which will show you the top 210 movie according to [The Movie DB](https://themoviedb.org) website.
+This is a simple web application which show you the top 210 movie according to [The Movie DB](https://themoviedb.org) website.
 
 ## Setup
 
 ### Install dependencies
-For the vendor pacakges please run the composer install commend
+For the vendor packages please run the composer install command
 ```shell
 composer install
 ```
-An additional local package, which is located at packages/tthdvd/tmdb, will be installed.
+An additional local package - which is located at packages/tthdvd/tmdb - will be installed.
 
 ### Frontend
 To build the frontend run the following command:
@@ -29,7 +29,7 @@ The easiest experience use [Sail](https://laravel.com/docs/9.x/sail) with docker
 
 ## Configure the project's settings 
 ### .env
-If you haven't done already copy the .env.example and generate the app:key
+If you haven't done already copy the .env.example and generate the app key
 ```shell
 cp .env.example .env && php artisan key:generate
 ```
@@ -47,13 +47,13 @@ php artisan migrate
 
 #### Sync the db
 You could run this artisan command for fetch movies from The Movie DB website; 
-by default the first 210 of top rated movie will be synchronised. 
+by default the first 210 of top rated movies will be synchronised. 
 ```shell
 php artisan movie-sync:all
 ```
 ### Scheduled task
-If you set up cron job for scheduled task, please notice the database synchronise will run every day at 02:00.
-You change in Kernel.php:
+If you set up cron job for scheduled task, please keep in mind, that the database synchronise will run every day at 02:00.
+This you change in Kernel.php:
 ```php
 protected function schedule(Schedule $schedule)
 {
@@ -62,7 +62,7 @@ protected function schedule(Schedule $schedule)
 ```
 
 ## Test
-For running test run the following command:
+For running tests run the following command:
 ```shell
 php artisan test
 ```
